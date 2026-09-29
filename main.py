@@ -15,12 +15,12 @@ if choice == "1":
     choicelength = input("Your choice: ")
     if choicelength == "1":
         meters = float(input("Insert meters: "))
-        kilometers = round(meters / 1000)
+        kilometers = round(meters / 1000, 1)
         print(f"{meters} m is {kilometers} km")
         print()
     elif choicelength == "2":
         kilometers = float(input("Insert kilometers: "))
-        meters = round(kilometers * 1000)
+        meters = round(kilometers * 1000, 1)
         print(f"{kilometers} km is {meters} m")
         print()
     elif choicelength == "0":
@@ -37,12 +37,12 @@ elif choice == "2":
     choiceweight = input("Your choice: ")
     if choiceweight == "1":
         grams = float(input("Insert grams: "))
-        pounds = round(grams / 453.59237)
+        pounds = round(grams / 453.59237, 1)
         print(f"{grams} g is {pounds} lb")
         print()
     elif choiceweight == "2":
         pounds = float(input("Insert pounds: "))
-        grams = round(pounds * 453.59237)
+        grams = round(pounds * 453.59237, 1)
         print(f"{pounds} lb is {grams} g")
         print()
     elif choiceweight == "0":
